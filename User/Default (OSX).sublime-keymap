@@ -1,5 +1,13 @@
 [
     { "keys": ["super+e"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
     { "keys": ["super+j"], "command": "js_run" },
-    { "keys": ["super+d"], "command": "duplicate_line" }
+    { "keys": ["super+d"], "command": "duplicate_line" },
+    { "keys": ["super+shift+r"],  "command": "reindent" },
+    
+    { "keys": ["ctrl+up"], "command": "scroll_lines_fixed", "args": {"amount": 1.0 } },
+    { "keys": ["ctrl+down"], "command": "scroll_lines_fixed", "args": {"amount": -1.0 } },
+
+    // Note: for this to work, user settings must be updated to have the following rule:  "vintage_ctrl_keys": true
+    { "keys": ["alt+up"], "command": "scroll_lines_fixed", "args" : {"by": "pages", "amount": 1.0 } },
+    { "keys": ["alt+down"], "command": "scroll_lines_fixed", "args" : {"by": "pages", "amount": -1.0 } }
 ]
